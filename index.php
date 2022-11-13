@@ -15,6 +15,8 @@ if($sql->rowcount() > 0){
         <th>Nome</th>
         <th>Email</th>
         <th>Telefone Celular</th>
+        <th>Telefone Fixo</th>
+        <th>Data Cadastro</th>
         <th>Ações</th>
     </tr>
     <?php foreach($lista as $usuario): ?>
@@ -23,6 +25,8 @@ if($sql->rowcount() > 0){
             <td><?=$usuario['nome'];?></td>
             <td><?=$usuario['email'];?></td>
             <td><?=$usuario['tel_cel'];?></td>
+            <td><?=$usuario['tel_fixo'];?></td>
+            <td><?=$usuario['data_cadastro'];?></td>
             <td>
                 <a href="editar.php?RG=<?=$usuario['RG'];?>">[Editar]</a>
                 <a href="excluir.php?RG=<?=$usuario['RG'];?>">[Excluir]</a>
