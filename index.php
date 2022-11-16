@@ -25,6 +25,9 @@ if($sql->rowcount() > 0){
         <th>Bairro</th>
         <th>Cidade</th>
         <th>Estado</th>
+        <th>Tipo Usuario</th>
+        <th>Altura</th>
+        <th>Peso</th>
         <th>Ações</th>
     </tr>
     <?php foreach($lista as $usuario): ?>
@@ -43,6 +46,9 @@ if($sql->rowcount() > 0){
             <td><?=$usuario['bairro'];?></td>
             <td><?=$usuario['cidade'];?></td>
             <td><?=$usuario['estado'];?></td>
+            <td><?=$usuario['tipo_usuario'];?></td>
+            <td><?=$usuario['altura'];?></td>
+            <td><?=$usuario['peso'];?></td>
             <td>
                 <a href="editar.php?RG=<?=$usuario['RG'];?>">[Editar]</a>
                 <a href="excluir.php?RG=<?=$usuario['RG'];?>">[Excluir]</a>

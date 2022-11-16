@@ -42,5 +42,14 @@
     <label>
         Estado: <input type="text" name="estado"/>
     </label>
+    <label>
+        Tipo Usuario: <input type="text" name="tipo_usuario"/>
+    </label>
+    <label>
+        Altura: <input type="text" name="altura"/>
+    </label>
+    <label>
+        Peso: <input type="text" name="peso"/>
+    </label>
     <input type="submit" value="Salvar"/>
 </form>

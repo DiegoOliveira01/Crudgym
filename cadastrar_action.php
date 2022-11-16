@@ -15,11 +15,15 @@ $complemento = filter_input(INPUT_POST, 'complemento');
 $bairro = filter_input(INPUT_POST, 'bairro');
 $cidade = filter_input(INPUT_POST, 'cidade');
 $estado = filter_input(INPUT_POST, 'estado');
+$tipo_usuario = filter_input(INPUT_POST, 'tipo_usuario');
+$altura = filter_input(INPUT_POST, 'altura');
+$peso = filter_input(INPUT_POST, 'peso');
 
 
-if($RG && $nome && $email && $telefone_celular && $telefone_fixo && $data_cadastro && $logradouro && $nome_logradouro && $numero && $cep && $complemento && $bairro && $cidade && $estado){
+
+if($RG && $nome && $email && $telefone_celular && $telefone_fixo && $data_cadastro && $logradouro && $nome_logradouro && $numero && $cep && $complemento && $bairro && $cidade && $estado && $tipo_usuario && $altura && $peso){
     
-    $sql = $pdo->prepare("INSERT INTO usuario (RG, nome, email, tel_cel, tel_fixo, data_cadastro, logradouro, nome_logradouro, numero, CEP, complemento, bairro, cidade, estado) VALUES (:RG, :nome, :email, :telefone_celular, :telefone_fixo,  :data_cadastro, :logradouro, :nome_logradouro, :numero, :cep, :complemento, :bairro, :cidade, :estado)");
+    $sql = $pdo->prepare("INSERT INTO usuario (RG, nome, email, tel_cel, tel_fixo, data_cadastro, logradouro, nome_logradouro, numero, CEP, complemento, bairro, cidade, estado, tipo_usuario, altura, peso) VALUES (:RG, :nome, :email, :telefone_celular, :telefone_fixo,  :data_cadastro, :logradouro, :nome_logradouro, :numero, :cep, :complemento, :bairro, :cidade, :estado, :tipo_usuario, :altura, :peso)");
     $sql->bindvalue(':RG', $RG);
     $sql->bindvalue(':nome', $nome);
     $sql->bindvalue(':email', $email);
@@ -34,6 +38,9 @@ if($RG && $nome && $email && $telefone_celular && $telefone_fixo && $data_cadast
     $sql->bindvalue(':bairro', $bairro);
     $sql->bindvalue(':cidade', $cidade);
     $sql->bindvalue(':estado', $estado);
+    $sql->bindvalue(':tipo_usuario', $tipo_usuario);
+    $sql->bindvalue(':altura', $altura);
+    $sql->bindvalue(':peso', $peso);
     $sql->execute();
     
     header("location: index.php");
