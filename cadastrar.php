@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>ACADEMIA | Formulário</title>
 
-    <link rel="stylesheet" type="text/css" href="../styles/form.css" />
-    <link rel="stylesheet" href="../styles/homepage.css">
+    <link rel="stylesheet" type="text/css" href="styles/form.css" /> <!-- ../styles/form.css -->
+    <link rel="stylesheet" href="styles/homepage.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
@@ -258,7 +258,7 @@
 
 </html>
 
-<h1>Cadastra usuario</h1>
+<!-- <h1>Cadastra usuario</h1>
 <form method="POST" action="cadastrar_action.php">
     <label>
         RG: <input type="text" name="RG"/>
@@ -312,4 +312,4 @@
         Peso: <input type="text" name="peso"/>
     </label>
     <input type="submit" value="Salvar"/>
-</form>
+</form> -->
