@@ -28,10 +28,10 @@
             <span class="logo"></span>
             <ul>
                 <li><a href="./index.php">Home</a></li>
-                <li><a href="#">Espaço do Cliente</a></li>
+                <li><a href="dashboard.php">Espaço do Cliente</a></li>
                 <li><a href="./cadastrar.php">Junte-se a nós</a></li>
                 <li><a href="#">Agendamento</a></li>
-                <li><a href="./planos.html">Planos</a></li>
+                <li><a href="pages/planos.html">Planos</a></li>
             </ul>
         </nav>
 
@@ -138,7 +138,7 @@
 
         <div class="form-control">   
             <label for="cep">CEP</label> 
-            <input type="text" id="cep" name="cep" placeholder="99999-999" >
+            <input type="number" id="cep" name="cep" placeholder="99999-999" >
             <i><img class="img-success" src="../assets/success-icon.svg" alt=""></i>
             <i><img class="img-error" src="../assets/error-icon.svg" alt=""></i>
 
@@ -226,7 +226,7 @@
     <footer>
         <div class="cadastro_ref">
             <h5>Clique no link e faça parte do time:</h5>
-            <a href="./form2.html">Cadastre-se</a>
+            <a href="./cadastrar.php">Cadastre-se</a>
         </div>
         <div class="informacoes">
             <h5>Informações</h5>
