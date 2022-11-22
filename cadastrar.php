@@ -252,7 +252,7 @@
     
     <br>
 
-    <!-- <script src="../scripts/form.js"></script> -->
+    <!-- <script src="scripts/form.js"></script> -->
 
 </body>
 
